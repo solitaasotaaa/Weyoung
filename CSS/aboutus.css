@@ -3,10 +3,37 @@ h1,h2 {
   font-size: 22px;
   line-height: 1.6;
   color: #121211;
-  background-color: #FAFAEB; /* Soft background */
+  background-color: #FFFAF7; /* Soft background */
   border-radius: 8px;
   text-align: center;
 }
+.navbar{
+        width: 100%;
+        height: 70px;
+        /* background-color:#fffaf7; */
+    }
+    .navbar ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        list-style: none;
+    }
+    .navbar ul li{
+        margin: 20px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+.navbar ul li a:hover{
+    color: #f0c040;
+}
+.navbar ul li a.active{
+    color: #f0c040;
+}         
 /* Override Bootstrap columns to be about 30% width */
 .row-cols-md-2 > .col {
   flex: 0 0 30%;  /* fixed 30% width */
@@ -25,20 +52,78 @@ h1,h2 {
   height: auto;
   border-radius: 8px;
 }
-.site-footer {
-  background-color: #FFFAF7;
-  padding: 40px 20px;
-  text-align: center;
-  color: #333; /* dark text for contrast */
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-}
-.site-footer a {
-  color: #1f3330; /* subtle dark green */
-  text-decoration: none;
-  margin: 0 8px;
-  transition: color 0.3s ease;
-}
-.site-footer a:hover {
-  color: #8fbc8f; /* lighter green hover */
-}
+.footer {
+      background-color: #f5eee7;
+      color: #5c4432;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px 60px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .follow-title {
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+
+    .follow-title h3 {
+      font-size: 20px;
+      color: #221b17;
+      margin: 0;
+    }
+
+    .footer-left ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-left li {
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-left i {
+      font-size: 20px;
+      margin-right: 10px;
+      color: #5c4432;
+    }
+
+    .footer-center {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .footer-center h3 {
+      font-size: 20px;
+      color: #221b17;
+      margin-bottom: 12px;
+    }
+
+    .footer-center p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .footer-right {
+      text-align: right;
+      margin-top: 30px;
+    }
+
+    .footer-right p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
