@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description"
-    content="Weyoung Cambodia - A premium, stylish cushions made for comfort and beauty. Handcrafted with love and care by SreyNea to to elevate your living space.">
+    content="Weyoung Cambodia - A premium, stylish cushions made for comfort and beauty. Handcrafted with love and care by Sreynea to to elevate your living space.">
   <meta name="keywords"
-    content="Cushions, lightweight Cushion, Cushions Cambodia, Weyoung Cushions, skin care, Make up, Handcrafted Cushions, long lasting cushion, waterproof, waterproof cushions, SreyNea">
+    content="Cushions, lightweight Cushion, Cushions Cambodia, Weyoung Cushions, skin care, Make up, Handcrafted Cushions, long lasting cushion, waterproof, waterproof cushions, Sreynea">
   <meta name="author" content="SreyNea">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
@@ -47,13 +47,14 @@
   <main>
     <h1>Homepage</h1>
     <div class="ticker-wrapper">
-      <div class="ticker-images">
-        <img src="./img/home_page/Slide_BA.png" alt="1">
-        <img src="./img/home_page/Slide_product.png" alt="2">
-        <img src="./img/home_page/Slide_Owner.png" alt="3">
-        <img src="./img/home_page/Slide_Products.png" alt="4">
-        <img src="./img/home_page/Slide_product.png" alt="5">
-      </div>
+        <div class="ticker-images">
+          <img src="./img/home_page/Slide_BA.png" alt="our BA">
+          <img src="./img/home_page/Slide_product.png" alt="our Product">
+          <img src="./img/home_page/Slide_Owner.png" alt="our Owner">
+          <img src="./img/home_page/Slide_Products.png" alt="our Products">
+          <img src="./img/home_page/Slide_product.png" alt="our product">
+          <img src="./img/home_page/Slide_Owner.png" alt="our owner">
+        </div>
     </div>
     <div>
       <h2>New Skin Filter Sunscreen</h2>
@@ -67,14 +68,14 @@
     </div>
 
     <!-- extra accessories -->
-      <div>
-        <h2>Extra Accessories</h2>
-      </div>
-      <div class="container">
-        <section class="row mb-4" aria-label="Extra Accessories" id="extra-List-section">
-          <div class="row" id="extra-list"></div>
-        </section>
-      </div>
+    <div>
+      <h2>Extra Accessories</h2>
+    </div>
+    <div class="container">
+      <section class="row mb-4" aria-label="Extra Accessories" id="extra-List-section">
+        <div class="row" id="extra-list"></div>
+      </section>
+    </div>
 
   </main>
 
@@ -109,4 +110,17 @@
 
 </html>
 
-<script src="./js/product.js"></script>
+<script src="./js/product.js">
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>

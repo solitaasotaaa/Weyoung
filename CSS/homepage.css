@@ -165,7 +165,6 @@ h2 {
 
 .ticker-images img {
   height: 700px;
-  /* Match the wrapper height */
   margin: 0 20px;
   vertical-align: middle;
 }
